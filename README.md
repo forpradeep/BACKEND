@@ -36,7 +36,7 @@ node first.js
 ## 👨‍💻 Author
 
 **Pradeep**
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@forpradeep](https://github.com/forpradeep)
 
 ## 📌 Goal
 
