@@ -1,14 +1,18 @@
 const express = require("express");
 const app = express();
-app.use("/about", (req, res) => {
-    res.send("name: Coder Army, website: coderarmy.com");
+
+app.get("/", (req,res)=>{
+    res.send("Hello Coder Army");
 });
-app.use("/contact", (req, res) => {
-    res.send("contact: info@coderarmy.com");
+
+app.get("/contact", (req,res)=>{
+    res.send("This is our Contact Page");
 });
-app.use("/review", (req, res) => {
-    res.send("review: 5 stars");
+
+app.get("/about", (req,res)=>{
+    res.send("This is our About Page");
 });
-app.listen(4000, () => {
+
+app.listen(4000, ()=>{
     console.log("I am Listening at port number 4000");
-})
+})  
