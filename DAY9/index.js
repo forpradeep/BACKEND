@@ -60,11 +60,11 @@ app.delete("/admin/:id", Auth, (req,res)=>{
     const index = FoodMenu.findIndex(item => item.id ===id);
 
         if(index===-1){
-           res.send("Item Doesn't Exist");
+           res.status(404).send("Item Doesn't Exist");
         }
         else{
             FoodMenu.splice(index,1);
-            res.send("Succesfully Deleted");
+            res.status(200).send("Succesfully Deleted");
         }
     
     
